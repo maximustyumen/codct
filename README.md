@@ -35,27 +35,41 @@
 33. скопировать содержимое Lib в usr/lib и сделать exe выполняемыми и все
 
 Сборка в Windows
-1.Устанавливаем VisualStudio 2019 или VS2022
 
-2.Устанавливаем CMAKE
+1. Устанавливаем VisualStudio 2019 или VS2022
 
-3.Собираем OSG (https://habr.com/ru/articles/429816/) или (https://www.openscenegraph.com/index.php/documentation/platform-specifics/windows)
+2. Устанавливаем CMAKE
+
+3. Собираем OSG (https://habr.com/ru/articles/429816/) или (https://www.openscenegraph.com/index.php/documentation/platform-specifics/windows)
 
   Список зависимостей: (https://objexx.com/OpenSceneGraph.html)
   
   OpenSceneGraph 3.6.5 (VC2022 2023/01 Build)
   
   curl 7.87.0
+  
   FBX 2020.3.2
+  
   ffmpeg 4.4.1
+  
   freetype 2.12.0
+  
   GDAL 3.0.6
+  
   giflib 5.2.1
+  
   glut 3.7
+  
   libjpeg 9e
+  
   libpng 1.6.39
+  
   libtiff 4.5.0
+  
   minizip git
+  
   zlib 1.2.13
+  
 4. Открыть проект MAXplayer в VisualStudio и собрать конструктор
+   
 
