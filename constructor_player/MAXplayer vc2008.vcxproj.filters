@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="User">
+      <UniqueIdentifier>{3764396f-1ceb-4793-b13f-1f15c3541154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Input">
+      <UniqueIdentifier>{a4713c31-1d16-40a0-aad6-48423a42a699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Input\keyboard">
+      <UniqueIdentifier>{ea5f464a-110d-493a-9cc5-85234b326d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Input\Mouse">
+      <UniqueIdentifier>{31f8e087-3aa7-47e5-9eed-5ee685c98e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Input\Z800">
+      <UniqueIdentifier>{09066e83-8ee3-4013-b5f7-f032edaac045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Input\Joy">
+      <UniqueIdentifier>{c5c6d28f-e261-4166-b477-2fc511968b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\Output">
+      <UniqueIdentifier>{aa830f13-bca8-4488-8f8c-80c32cb0adc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User\DataClass">
+      <UniqueIdentifier>{7dd7fc81-cc28-450c-827c-93fb0043dd87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{dfaa72cb-2d1f-48cd-9c82-1ca510ffcb0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Graphic">
+      <UniqueIdentifier>{00967524-703a-48b3-bad3-3695db50d696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Sound">
+      <UniqueIdentifier>{47d38ff2-9b90-426e-8be4-ca58581d81de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Charecters">
+      <UniqueIdentifier>{f36c5a2d-422b-4d9a-b2ef-bcf569dca50d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Visitors">
+      <UniqueIdentifier>{04b772f5-0988-4ba8-9eb1-245225c77aa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\HUD">
+      <UniqueIdentifier>{14547bcf-a853-451f-99c9-0b16247e3795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\OLD">
+      <UniqueIdentifier>{8e6ffb2d-8da0-4cab-9d5f-2754b381e422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\TEXT">
+      <UniqueIdentifier>{9d40c93f-091c-4489-9675-b81e423fe43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Shaders">
+      <UniqueIdentifier>{42777f94-7e18-4da5-be4a-b797521f4619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Shaders\microprograms">
+      <UniqueIdentifier>{d8ecfb04-6865-4f0e-b0f5-9654e214c521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Light">
+      <UniqueIdentifier>{c640ac5c-4b12-42be-8721-8fee1f85143c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Video">
+      <UniqueIdentifier>{71d9b109-43b7-4ccc-a7a6-820f8d8cfda8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Particles">
+      <UniqueIdentifier>{6afaada8-215b-4703-ae74-194e0024550a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\CustomGeometry">
+      <UniqueIdentifier>{ab9325c3-96bb-4857-a4d1-def5ce705674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Cameras">
+      <UniqueIdentifier>{39589128-3320-4444-8c3d-5b01911e8a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTI">
+      <UniqueIdentifier>{c5e1888f-e82c-47d2-b4e5-1975a977f07a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTI\proxy">
+      <UniqueIdentifier>{ce2451ad-287b-43e4-ad9f-39e0c73f95c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interpretator">
+      <UniqueIdentifier>{0b28f230-cddc-4a00-9261-0f46330ec6ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Work">
+      <UniqueIdentifier>{18c7f7b2-e6f7-40cd-9b15-495fad3b1851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shield">
+      <UniqueIdentifier>{776eb6ec-8f3b-4191-b063-bad4597a9479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{1ffc200d-02c1-4fd4-bf21-6b591111228b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configure">
+      <UniqueIdentifier>{ba378fe0-c15b-41e0-b99f-58716b44fa66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Error">
+      <UniqueIdentifier>{f6a7e33d-8a34-43e9-8cb8-f90eb1e0785c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arduino">
+      <UniqueIdentifier>{74a100c6-0b9b-47c2-a5b9-6ddddd044c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TINCAN">
+      <UniqueIdentifier>{3419ac6d-d79e-4929-9536-081f4292fa9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SkinAnimation">
+      <UniqueIdentifier>{e941b4fc-2b67-4e86-abae-cae8747f555d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SCORM">
+      <UniqueIdentifier>{d534a590-52f2-4db9-920b-0f3b8c1474fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VR">
+      <UniqueIdentifier>{78f693c3-0110-45dc-9ef7-49129884a999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VR\OsgOpenVR">
+      <UniqueIdentifier>{1f3054c3-b52f-4a2a-9665-9ea5f0c498a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SSAO">
+      <UniqueIdentifier>{a02e00db-b603-472e-b9a9-80d0f66383a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\user\User.cpp">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\UserFoot.cpp">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\UserHands.cpp">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\input\Input.cpp">
+      <Filter>User\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\input\InputKeyboard.cpp">
+      <Filter>User\Input\keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\input\InputKeys.cpp">
+      <Filter>User\Input\keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\input\keytranslation.cpp">
+      <Filter>User\Input\keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\input\InputMouse.cpp">
+      <Filter>User\Input\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\input\Joystick\InputJoystick.cpp">
+      <Filter>User\Input\Joy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\output\Output.cpp">
+      <Filter>User\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\output\OutputAudio.cpp">
+      <Filter>User\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\output\OutputVideo.cpp">
+      <Filter>User\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\FootDataClass.cpp">
+      <Filter>User\DataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\HandsDataClass.cpp">
+      <Filter>User\DataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\HeadDataClass.cpp">
+      <Filter>User\DataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\events\InternalEventClass.cpp">
+      <Filter>User\DataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="src\user\JoyDataClass.cpp">
+      <Filter>User\DataClass</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\SceneClass.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Graphic\GraphicSceneClass.cpp">
+      <Filter>Scene\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Audio\AudioSceneClass.cpp">
+      <Filter>Scene\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Audio\BaseSoundObject.cpp">
+      <Filter>Scene\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Visitors\FindAnimationByName.cpp">
+      <Filter>Scene\Visitors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Visitors\FindGeometry.cpp">
+      <Filter>Scene\Visitors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Visitors\FindImageStreamsVisitor.cpp">
+      <Filter>Scene\Visitors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Visitors\FindLightByName.cpp">
+      <Filter>Scene\Visitors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Visitors\FindNodeByName.cpp">
+      <Filter>Scene\Visitors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Visitors\FindTexture.cpp">
+      <Filter>Scene\Visitors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Visitors\RenameAllNode.cpp">
+      <Filter>Scene\Visitors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\HUD\InterfaceForHUD.cpp">
+      <Filter>Scene\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\OLD\Base3DObject.cpp">
+      <Filter>Scene\OLD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\OLD\InterfaceForOLD.cpp">
+      <Filter>Scene\OLD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Text\BaseTextObject.cpp">
+      <Filter>Scene\TEXT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Text\InterfaceForText.cpp">
+      <Filter>Scene\TEXT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Shaders\BumpMaterial.cpp">
+      <Filter>Scene\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Shaders\InterfaceForShaders.cpp">
+      <Filter>Scene\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Light\InterfaceForLight.cpp">
+      <Filter>Scene\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Video\BaseVideoObject.cpp">
+      <Filter>Scene\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Video\InterfaceForVideo.cpp">
+      <Filter>Scene\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Particle\BaseParticleObject.cpp">
+      <Filter>Scene\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Particle\InterfaceForParticle.cpp">
+      <Filter>Scene\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\CustomGeometry\CustomGeometry.cpp">
+      <Filter>Scene\CustomGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Cameras\interfaceforcameras.cpp">
+      <Filter>Scene\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RTI\federate.cpp">
+      <Filter>RTI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RTI\federate_ambassador.cpp">
+      <Filter>RTI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RTI\Uuencode\uuencode.cpp">
+      <Filter>RTI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RTI\proxy.cpp">
+      <Filter>RTI\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shield\ShieldWin.cpp">
+      <Filter>Shield</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Configure\Configure.cpp">
+      <Filter>Configure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Configure\Console.cpp">
+      <Filter>Configure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error\errorclass.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Arduino\SerialClass.cpp">
+      <Filter>Arduino</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MAXplayer.cpp" />
+    <ClCompile Include="src\ThreadExample.cpp" />
+    <ClCompile Include="src\TinCan\cJSON.c">
+      <Filter>TINCAN</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TinCan\InterfaceForTinCan.cpp">
+      <Filter>TINCAN</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\SkinAnimation\skin_animation_manager.cpp">
+      <Filter>Scene\SkinAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\SkinAnimation\interface_for_skin_animation.cpp">
+      <Filter>Scene\SkinAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SCORM\interfaceforscorm.cpp">
+      <Filter>SCORM</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RTI\net_client.cpp">
+      <Filter>RTI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VR\osgOpenVR\openvrdevice.cpp">
+      <Filter>VR\OsgOpenVR</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VR\osgOpenVR\openvreventhandler.cpp">
+      <Filter>VR\OsgOpenVR</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VR\osgOpenVR\openvrupdateslavecallback.cpp">
+      <Filter>VR\OsgOpenVR</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VR\osgOpenVR\openvrviewer.cpp">
+      <Filter>VR\OsgOpenVR</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SSAO\ffssao.cpp">
+      <Filter>SSAO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Visitors\ChangeShaderUniformVisitor.cpp">
+      <Filter>Scene\Visitors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\user\input\Joystick\InputJoystick.h">
+      <Filter>User\Input\Joy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Graphic\GraphicContext.h">
+      <Filter>Scene\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Video\BaseVideoObject.h">
+      <Filter>Scene\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Cameras\interfaceforcameras.h">
+      <Filter>Scene\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RTI\federate.h">
+      <Filter>RTI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RTI\federate_ambassador.h">
+      <Filter>RTI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RTI\Uuencode\uuencode.h">
+      <Filter>RTI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RTI\proxy.h">
+      <Filter>RTI\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lua\Interpritator.h">
+      <Filter>Interpretator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lua\os_clock.h">
+      <Filter>Interpretator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lua\SupportExternLibs.h">
+      <Filter>Interpretator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shield\ShieldWin.h">
+      <Filter>Shield</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Configure\Configure.h">
+      <Filter>Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Configure\Console.h">
+      <Filter>Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\error\errorclass.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Arduino\SerialClass.h">
+      <Filter>Arduino</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BuildConfig.h" />
+    <ClInclude Include="src\MAXplayer.h" />
+    <ClInclude Include="src\user\output\ScreenShot.h" />
+    <ClInclude Include="src\Scene\SkinAnimation\skin_animation_manager.h">
+      <Filter>Scene\SkinAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SkinAnimation\interface_for_skin_animation.h">
+      <Filter>Scene\SkinAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SCORM\interfaceforscorm.h">
+      <Filter>SCORM</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RTI\net_client.h">
+      <Filter>RTI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VR\osgOpenVR\openvrdevice.h">
+      <Filter>VR\OsgOpenVR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VR\osgOpenVR\openvreventhandler.h">
+      <Filter>VR\OsgOpenVR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VR\osgOpenVR\openvrupdateslavecallback.h">
+      <Filter>VR\OsgOpenVR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VR\osgOpenVR\openvrviewer.h">
+      <Filter>VR\OsgOpenVR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SSAO\ffssao.h">
+      <Filter>SSAO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\shaders\bumpmap.frag">
+      <Filter>Scene\Shaders\microprograms</Filter>
+    </None>
+    <None Include="bin\shaders\bumpmap.vert">
+      <Filter>Scene\Shaders\microprograms</Filter>
+    </None>
+    <None Include="bin\shaders\sky.frag">
+      <Filter>Scene\Shaders\microprograms</Filter>
+    </None>
+    <None Include="bin\shaders\sky.vert">
+      <Filter>Scene\Shaders\microprograms</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\inWork\BUGS.txt">
+      <Filter>Work</Filter>
+    </Text>
+    <Text Include="src\inWork\CHANGELOG.txt">
+      <Filter>Work</Filter>
+    </Text>
+    <Text Include="src\inWork\README.txt">
+      <Filter>Work</Filter>
+    </Text>
+    <Text Include="src\inWork\WORK.txt">
+      <Filter>Work</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>Resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="myapp.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\Scene\Particle\ParticleHelper.h">
+      <Filter>Scene\Particles</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

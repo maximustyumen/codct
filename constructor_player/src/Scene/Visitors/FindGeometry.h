@@ -1,0 +1,36 @@
+#ifndef FINDGEOMETRY
+#define FINDGEOMETRY
+
+#include <osgDB/ReadFile>
+#include <osgUtil/Optimizer>
+#include <osg/CoordinateSystemNode>
+#include <osg/PositionAttitudeTransform>
+#include <osg/MatrixTransform>
+#include <iostream>
+
+class FindGeometryVisitor : public osg::NodeVisitor
+{
+public:
+    FindGeometryVisitor():
+        osg::NodeVisitor(osg::NodeVisitor::TRAVERSE_ALL_CHILDREN) 
+		{
+			setTraversalMask(0xffffffff);
+			setNodeMaskOverride(0xffffffff);
+		}
+    
+	//вот это нам и интересно
+    virtual void apply(osg::Geode& geode);
+
+	virtual void apply(osg::Node& node);
+
+    virtual void apply(osg::MatrixTransform& node);
+	
+	virtual void apply(osg::Group& group);
+
+	osg::ref_ptr<osg::Geometry> geom;
+
+};
+
+
+#endif
+
