@@ -36,10 +36,15 @@
 
 Сборка в Windows
 1.Устанавливаем VisualStudio 2019 или VS2022
+
 2.Устанавливаем CMAKE
+
 3.Собираем OSG (https://habr.com/ru/articles/429816/) или (https://www.openscenegraph.com/index.php/documentation/platform-specifics/windows)
+
   Список зависимостей: (https://objexx.com/OpenSceneGraph.html)
+  
   OpenSceneGraph 3.6.5 (VC2022 2023/01 Build)
+  
   curl 7.87.0
   FBX 2020.3.2
   ffmpeg 4.4.1
