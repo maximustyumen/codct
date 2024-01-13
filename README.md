@@ -11,9 +11,12 @@
 
 
 
-Сборка в Lunux'е
+Сборка в Lunux'е (Ubuntu версия старше 18.04)
 
 1. Ставим cmake
+```
+sudo apt-get install cmake
+```
 2. Распаковываем OSG
 3. cmake -i ./    
 4. Устанавливаем и собираем freetype2-devel
