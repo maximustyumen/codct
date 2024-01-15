@@ -10,3 +10,9 @@
 [submodule "VR_XR_AR/osgoculusviewer"]
 	path = VR_XR_AR/osgoculusviewer
 	url = https://github.com/bjornblissing/osgoculusviewer
+[submodule "Vulcan/VulkanSceneGraph"]
+	path = Vulcan/VulkanSceneGraph
+	url = https://github.com/vsg-dev/VulkanSceneGraph
+[submodule "Vulcan/osgQt"]
+	path = Vulcan/osgQt
+	url = https://github.com/openscenegraph/osgQt
