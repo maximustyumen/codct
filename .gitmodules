@@ -1,3 +1,12 @@
 [submodule "OpenSceneGraph"]
 	path = OpenSceneGraph
 	url = https://github.com/openscenegraph/OpenSceneGraph.git
+[submodule "VR_XR_AR/osgXR"]
+	path = VR_XR_AR/osgXR
+	url = https://github.com/amalon/osgXR
+[submodule "VR_XR_AR/osgopenvrviewer"]
+	path = VR_XR_AR/osgopenvrviewer
+	url = https://github.com/ChrisDenham/osgopenvrviewer
+[submodule "VR_XR_AR/osgoculusviewer"]
+	path = VR_XR_AR/osgoculusviewer
+	url = https://github.com/bjornblissing/osgoculusviewer
