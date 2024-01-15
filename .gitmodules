@@ -16,3 +16,9 @@
 [submodule "Vulcan/osgQt"]
 	path = Vulcan/osgQt
 	url = https://github.com/openscenegraph/osgQt
+[submodule "OPCUA/open62541_Unity"]
+	path = OPCUA/open62541_Unity
+	url = https://github.com/maximum2000/open62541_Unity
+[submodule "IEEE1516/OpenRTI_Unity"]
+	path = IEEE1516/OpenRTI_Unity
+	url = https://github.com/maximum2000/OpenRTI_Unity
