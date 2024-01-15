@@ -11,17 +11,45 @@
 
 
 
-Сборка в Lunux'е
-
+Сборка в Lunux'е (Ubuntu версия старше 18.04)
+Прежде всего обновляем базу репозиториев:
+```
+sudo apt-get update
+```
+Далее, по порядку:
 1. Ставим cmake
+```
+sudo apt-get install cmake
+```
 2. Распаковываем OSG
 3. cmake -i ./    
 4. Устанавливаем и собираем freetype2-devel
-5. Устанавливаем и собираем giflib-devel 
+```
+sudo apt-get install -y libfreetype-dev
+```
+5. Устанавливаем и собираем giflib-devel
+```
+sudo apt-get install -y libgif-dev
+```
 6. Устанавливаем и собираем zlib-devel
+```
+sudo apt-get install -y zlib1g
+sudo apt-get install -y zlib1g-dev
+```
 7. Устанавливаем и собираем libpng-devel
-8. Устанавливаем и собираем libjpeg-devel 
+```
+sudo apt install libpng-dev
+```
+8. Устанавливаем и собираем libjpeg-devel
+```
+sudo apt install libjpeg-dev
+```
 9. Устанавливаем и собираем mesa-devel
+```
+sudo add-apt-repository ppa:oibaf/graphics-drivers
+sudo apt update
+sudo apt upgrade
+```
 10. Устанавливаем и собираем make, su , make install
 11. Устанавливаем и собираем Распаковываем Certi
 12. Устанавливаем и собираем bison, flex, m4
