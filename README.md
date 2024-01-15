@@ -83,3 +83,8 @@
 4. Открыть проект MAXplayer в VisualStudio и собрать конструктор
    
 
+Сборка на Android 
+
+Сборка на андроид производится в соответствии с официальной документаццией на OSG
+https://www.openscenegraph.com/index.php/documentation/platform-specifics/android/43-building-openscenegraph-for-android-3-0-2
+
