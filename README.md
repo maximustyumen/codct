@@ -29,7 +29,10 @@ sudo apt-get update
 ```
 sudo apt-get install cmake
 ```
-2. Распаковываем OSG
+2. Устанавливаем OSG
+```
+sudo apt-get install -y openscenegraph
+```
 3. Устанавливаем и собираем freetype2-devel
 ```
 sudo apt-get install -y libfreetype-dev
