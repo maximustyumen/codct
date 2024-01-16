@@ -116,20 +116,20 @@ sudo apt-get install libsdl2-dev libsdl2-2.0-0 -y;
 ```
 
 ## Сборка в Windows
-### [Список](https://objexx.com/OpenSceneGraph.html) зависимостей
-OpenSceneGraph 3.6.5 (VC2022 2023/01 Build)
-curl 7.87.0
-FBX 2020.3.2
-ffmpeg 4.4.1
-freetype 2.12.0
-GDAL 3.0.6
-giflib 5.2.1
-glut 3.7
-libjpeg 9e
-libpng 1.6.39
-libtiff 4.5.0
-minizip git
-zlib 1.2.13
+### Список зависимостей [тут](https://objexx.com/OpenSceneGraph.html)
++ OpenSceneGraph 3.6.5 (VC2022 2023/01 Build)
++ curl 7.87.0
++ FBX 2020.3.2
++ ffmpeg 4.4.1
++ freetype 2.12.0
++ GDAL 3.0.6
++ giflib 5.2.1
++ glut 3.7
++ libjpeg 9e
++ libpng 1.6.39
++ libtiff 4.5.0
++ minizip git
++ zlib 1.2.13
 ### Процесс установки
 1. [Устанавливаем VisualStudio 2019 или VS2022](https://learn.microsoft.com/ru-ru/visualstudio/install/install-visual-studio?view=vs-2022).
 2. Устанавливаем [CMAKE](https://cpp-python-nsu.inp.nsk.su/textbook/sec2/ch5).
