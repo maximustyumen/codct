@@ -39,7 +39,7 @@ public:
 	//конструктор
 	BaseSoundObject(std::string name);
 	//деструктор
-        ~BaseSoundObject() throw (ErrorClass);
+        ~BaseSoundObject() ;
 	
 	//список имен всех созданных и неудаленных голосов
 	static std::map <std::string, int> VirtualVoices;

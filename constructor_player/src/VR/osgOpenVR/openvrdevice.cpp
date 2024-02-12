@@ -398,7 +398,7 @@ osg::Matrix OpenVRDevice::viewMatrixRight() const
 
 void OpenVRDevice::resetSensorOrientation() const
 {
-	m_vrSystem->ResetSeatedZeroPose();
+	//m_vrSystem->ResetSeatedZeroPose(); //!!!
 }
 
 void OpenVRDevice::updatePose()
@@ -464,7 +464,7 @@ void OpenVRDevice::updatePose()
 		temp.Trigger_y=0;
 
 		vr::VRControllerState_t state;
-		if (m_vrSystem->GetControllerState(unDevice, &state))
+		if (m_vrSystem->GetControllerState(unDevice, &state, 100)) //!!!
 		{
 			if (state.ulButtonPressed & vr::ButtonMaskFromId(vr::k_EButton_ApplicationMenu)) temp.k_EButton_ApplicationMenu = true;
 			if (state.ulButtonPressed & vr::ButtonMaskFromId(vr::k_EButton_SteamVR_Trigger))  temp.k_EButton_SteamVR_Trigger = true;
@@ -552,8 +552,8 @@ osg::Camera* OpenVRDevice::createRTTCamera(OpenVRDevice::Eye eye, osg::Transform
 
 bool OpenVRDevice::submitFrame()
 {
-	vr::Texture_t leftEyeTexture = {(void*)m_textureBuffer[0]->getTexture(), vr::API_OpenGL, vr::ColorSpace_Gamma };
-	vr::Texture_t rightEyeTexture = {(void*)m_textureBuffer[1]->getTexture(), vr::API_OpenGL, vr::ColorSpace_Gamma };
+	vr::Texture_t leftEyeTexture = {(void*)m_textureBuffer[0]->getTexture(), vr::TextureType_OpenGL, vr::ColorSpace_Gamma };
+	vr::Texture_t rightEyeTexture = {(void*)m_textureBuffer[1]->getTexture(), vr::TextureType_OpenGL, vr::ColorSpace_Gamma };
 
 	vr::EVRCompositorError lError = vr::VRCompositor()->Submit(vr::Eye_Left, &leftEyeTexture);
 	vr::EVRCompositorError rError = vr::VRCompositor()->Submit(vr::Eye_Right, &rightEyeTexture);
@@ -668,10 +668,10 @@ void OpenVRDevice::calculateProjectionMatrices()
 {
 	vr::HmdMatrix44_t mat;
 	
-	mat = m_vrSystem->GetProjectionMatrix(vr::Eye_Left, m_nearClip, m_farClip, vr::API_OpenGL);
+	mat = m_vrSystem->GetProjectionMatrix(vr::Eye_Left, m_nearClip, m_farClip);
 	m_leftEyeProjectionMatrix = convertMatrix44(mat);
 
-	mat = m_vrSystem->GetProjectionMatrix(vr::Eye_Right, m_nearClip, m_farClip, vr::API_OpenGL);
+	mat = m_vrSystem->GetProjectionMatrix(vr::Eye_Right, m_nearClip, m_farClip);
 	m_rightEyeProjectionMatrix = convertMatrix44(mat);
 }
 

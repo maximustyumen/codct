@@ -79,7 +79,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\DEVELOP_X64\openvr-master\headers;D:\DEVELOP_X64\osgopenvrviewer-master\src;C:\DEVELOP\3rdParty_x64\x64\include;D:\DEVELOP_X64\curl-7.32.0\include;D:\DEVELOP_X64\Vorbis\libvorbis-1.3.3\include;D:\DEVELOP_X64\Vorbis\libogg-1.3.0\include;D:\DEVELOP_X64\SDL2-2.0.4\include;D:\DEVELOP_X64\freealut-1.1.0-src\include;D:\DEVELOP_X64\openal-soft-1.17.2\include\AL;D:\DEVELOP_X64\openal-soft-1.17.2\include;D:\DEVELOP_X64\CERTI-3.5.1-Source\tempo\include\hla-1_3;D:\DEVELOP_X64\CERTI-3.5.1-Source\include\hla-1_3;D:\DEVELOP_X64\CERTI-3.5.1-Source\tempo\include;D:\DEVELOP_X64\CERTI-3.5.1-Source\include;D:\DEVELOP_X64\lua-5.3.3\src;C:\DEVELOP\OpenSceneGraph-OpenSceneGraph-3.4.1\build\include;C:\DEVELOP\OpenSceneGraph-OpenSceneGraph-3.4.1\include;D:\SVN\MAXLAB\net\src;$(IncludePath)</IncludePath>
+    <IncludePath>C:\DEVELOP\openvr-master\headers;D:\DEVELOP_X64\osgopenvrviewer-master\src;C:\DEVELOP\3rdParty_x64\x64\include;D:\DEVELOP_X64\curl-7.32.0\include;C:\DEVELOP\vorbis-master\include;C:\DEVELOP\ogg-master\include;C:\DEVELOP\SDL2-2.30.0\include;C:\DEVELOP\freealut-master\include;C:\DEVELOP\openal-soft-master\include;C:\DEVELOP\openal-soft-master\include\AL;C:\DEVELOP\lua-5.4.2_Win64_dll17_lib\include;C:\DEVELOP\OpenSceneGraph-OpenSceneGraph-3.4.1\build\include;C:\DEVELOP\OpenSceneGraph-OpenSceneGraph-3.4.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\DEVELOP_X64\openvr-master\lib\win64;D:\DEVELOP_X64\osgopenvrviewer-masterr\tempo\lib\Release;D:\DEVELOP_X64\osgoculusviewer-master\tempo\lib\Release;D:\DEVELOP_X64\curl-7.32.0\tempo\lib\Release;D:\DEVELOP_X64\_x64\lib;D:\DEVELOP_X64\lua-5.3.3\msvc\lua\x64\Release;D:\DEVELOP_X64\OpenSceneGraph-3.4.0\tempo\lib;D:\DEVELOP_X64\freealut-1.1.0-src\tempo\Release;D:\DEVELOP_X64\openal-soft-1.17.2\tempo\Release;D:\DEVELOP_X64\CERTI-3.5.1-Source\tempo\Release;D:\DEVELOP_X64\SDL2-2.0.4\tempo\Release;D:\DEVELOP_X64\Vorbis\libvorbis-1.3.3\win32\VS2010\x64\Release;D:\DEVELOP_X64\Vorbis\libogg-1.3.0\win32\VS2010\x64\Release;D:\SVN\MAXLAB\net\x64\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -262,7 +262,6 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\RTI\net_client.cpp" />
     <ClCompile Include="src\Scene\SkinAnimation\interface_for_skin_animation.cpp" />
     <ClCompile Include="src\Scene\SkinAnimation\skin_animation_manager.cpp" />
     <ClCompile Include="src\Scene\Visitors\ChangeShaderUniformVisitor.cpp" />
@@ -320,11 +319,6 @@
     <ClCompile Include="src\Scene\Particle\InterfaceForParticle.cpp" />
     <ClCompile Include="src\Scene\CustomGeometry\CustomGeometry.cpp" />
     <ClCompile Include="src\Scene\Cameras\interfaceforcameras.cpp" />
-    <ClCompile Include="src\RTI\federate.cpp" />
-    <ClCompile Include="src\RTI\federate_ambassador.cpp" />
-    <ClCompile Include="src\RTI\Uuencode\uuencode.cpp" />
-    <ClCompile Include="src\RTI\proxy.cpp" />
-    <ClCompile Include="src\Shield\ShieldWin.cpp" />
     <ClCompile Include="src\Configure\Configure.cpp" />
     <ClCompile Include="src\Configure\Console.cpp" />
     <ClCompile Include="src\error\errorclass.cpp" />
@@ -341,7 +335,6 @@
     <ClCompile Include="src\VR\osgOpenVR\openvrviewer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\RTI\net_client.h" />
     <ClInclude Include="src\Scene\SkinAnimation\interface_for_skin_animation.h" />
     <ClInclude Include="src\Scene\SkinAnimation\skin_animation_manager.h" />
     <ClInclude Include="src\SSAO\ffssao.h" />
@@ -357,14 +350,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </CustomBuild>
     <ClInclude Include="src\Scene\Cameras\interfaceforcameras.h" />
-    <ClInclude Include="src\RTI\federate.h" />
-    <ClInclude Include="src\RTI\federate_ambassador.h" />
-    <ClInclude Include="src\RTI\Uuencode\uuencode.h" />
-    <ClInclude Include="src\RTI\proxy.h" />
     <ClInclude Include="src\lua\Interpritator.h" />
     <ClInclude Include="src\lua\os_clock.h" />
     <ClInclude Include="src\lua\SupportExternLibs.h" />
-    <ClInclude Include="src\Shield\ShieldWin.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="src\Configure\Configure.h" />
     <ClInclude Include="src\Configure\Console.h" />

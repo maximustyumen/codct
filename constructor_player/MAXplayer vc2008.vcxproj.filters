@@ -70,20 +70,11 @@
     <Filter Include="Scene\Cameras">
       <UniqueIdentifier>{39589128-3320-4444-8c3d-5b01911e8a30}</UniqueIdentifier>
     </Filter>
-    <Filter Include="RTI">
-      <UniqueIdentifier>{c5e1888f-e82c-47d2-b4e5-1975a977f07a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="RTI\proxy">
-      <UniqueIdentifier>{ce2451ad-287b-43e4-ad9f-39e0c73f95c1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Interpretator">
       <UniqueIdentifier>{0b28f230-cddc-4a00-9261-0f46330ec6ba}</UniqueIdentifier>
     </Filter>
     <Filter Include="Work">
       <UniqueIdentifier>{18c7f7b2-e6f7-40cd-9b15-495fad3b1851}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shield">
-      <UniqueIdentifier>{776eb6ec-8f3b-4191-b063-bad4597a9479}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource">
       <UniqueIdentifier>{1ffc200d-02c1-4fd4-bf21-6b591111228b}</UniqueIdentifier>
@@ -243,21 +234,6 @@
     <ClCompile Include="src\Scene\Cameras\interfaceforcameras.cpp">
       <Filter>Scene\Cameras</Filter>
     </ClCompile>
-    <ClCompile Include="src\RTI\federate.cpp">
-      <Filter>RTI</Filter>
-    </ClCompile>
-    <ClCompile Include="src\RTI\federate_ambassador.cpp">
-      <Filter>RTI</Filter>
-    </ClCompile>
-    <ClCompile Include="src\RTI\Uuencode\uuencode.cpp">
-      <Filter>RTI</Filter>
-    </ClCompile>
-    <ClCompile Include="src\RTI\proxy.cpp">
-      <Filter>RTI\proxy</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Shield\ShieldWin.cpp">
-      <Filter>Shield</Filter>
-    </ClCompile>
     <ClCompile Include="src\Configure\Configure.cpp">
       <Filter>Configure</Filter>
     </ClCompile>
@@ -286,9 +262,6 @@
     </ClCompile>
     <ClCompile Include="src\SCORM\interfaceforscorm.cpp">
       <Filter>SCORM</Filter>
-    </ClCompile>
-    <ClCompile Include="src\RTI\net_client.cpp">
-      <Filter>RTI</Filter>
     </ClCompile>
     <ClCompile Include="src\VR\osgOpenVR\openvrdevice.cpp">
       <Filter>VR\OsgOpenVR</Filter>
@@ -322,18 +295,6 @@
     <ClInclude Include="src\Scene\Cameras\interfaceforcameras.h">
       <Filter>Scene\Cameras</Filter>
     </ClInclude>
-    <ClInclude Include="src\RTI\federate.h">
-      <Filter>RTI</Filter>
-    </ClInclude>
-    <ClInclude Include="src\RTI\federate_ambassador.h">
-      <Filter>RTI</Filter>
-    </ClInclude>
-    <ClInclude Include="src\RTI\Uuencode\uuencode.h">
-      <Filter>RTI</Filter>
-    </ClInclude>
-    <ClInclude Include="src\RTI\proxy.h">
-      <Filter>RTI\proxy</Filter>
-    </ClInclude>
     <ClInclude Include="src\lua\Interpritator.h">
       <Filter>Interpretator</Filter>
     </ClInclude>
@@ -342,9 +303,6 @@
     </ClInclude>
     <ClInclude Include="src\lua\SupportExternLibs.h">
       <Filter>Interpretator</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Shield\ShieldWin.h">
-      <Filter>Shield</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Resource</Filter>
@@ -372,9 +330,6 @@
     </ClInclude>
     <ClInclude Include="src\SCORM\interfaceforscorm.h">
       <Filter>SCORM</Filter>
-    </ClInclude>
-    <ClInclude Include="src\RTI\net_client.h">
-      <Filter>RTI</Filter>
     </ClInclude>
     <ClInclude Include="src\VR\osgOpenVR\openvrdevice.h">
       <Filter>VR\OsgOpenVR</Filter>

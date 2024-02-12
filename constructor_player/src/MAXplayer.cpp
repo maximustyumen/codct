@@ -37,7 +37,7 @@ int main( int argc, char **argv )
     //печать версии
     std::cout << player_version << std::endl << "Build " << __DATE__ << " " << __TIME__ << std::endl;
     //
-    std::cout << std::endl << "RTI_VERSION = " << RTI_VERSION << std::endl;
+   // std::cout << std::endl << "RTI_VERSION = " << RTI_VERSION << std::endl;
 
 	//печать характеристик оборудования и ОС
 	PrintAllInfo( argc, argv);
@@ -62,9 +62,9 @@ int main( int argc, char **argv )
 	//проверка защиты
 	bool developmode;
 
-	Shield* check = new Shield();
-	developmode = check->CheckShield ();
-    delete check;
+	//Shield* check = new Shield();
+	//developmode = check->CheckShield ();
+    //delete check;
 
 #ifdef GuardiantShield
 	//GuardiantShield a;
@@ -203,7 +203,7 @@ void SimulationStep()
 	tick1 = osg::Timer::instance()->tick();
 	//Обновление RTI
 
-        rti_update();
+        //rti_update();
 	tick2 = osg::Timer::instance()->tick();
 	double RTI_T = osg::Timer::instance()->delta_s(tick1,tick2);
 
@@ -331,6 +331,7 @@ void SimulationStep()
 //Обновление RTI
 void rti_update()
 {
+	/*
     if( g_federate.is_run() )
     {
         // отправляем изменения в федерацию и получаем изменения из федерации
@@ -378,6 +379,7 @@ void rti_update()
 
 	if(g_net_client)
 		g_net_client->update();
+		*/
 
 }
 
@@ -388,7 +390,7 @@ void Bue()
 	lua_close(Interpritator::L);
 	// Удаление федерации и всех ее федератов. Нужно вызывать обязательно.
 
-        g_proxy_manager.destroy();
+        //g_proxy_manager.destroy();
 
 	//вызываем деструкторы
 	delete scene;

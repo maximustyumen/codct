@@ -27,12 +27,6 @@ interfaceForScorm* SCORM;
 InterfaceForTinCan *TINCAN;
 
 
-#ifdef WIN32
-	//#include "./Shield/Guardiant/guardiant.h"
-	#include "./Shield/ShieldWin.h"
-#else
-	#include "./Shield/ShieldLinux.h"
-#endif
 
 
 #include "./user/User.h"
@@ -42,17 +36,7 @@ InterfaceForTinCan *TINCAN;
 SceneClass* scene;
 UserClass* localUser; 
 
-//rti        
-#include "RTI/federate.h"
-cFederate g_federate;
-//rti proxy
-#include "RTI/proxy.h"
-cRTIProxyManager g_proxy_manager;
 
-#include "RTI/net_client.h"
-std::unique_ptr<NetClient> g_net_client;
-
-void rti_update();
 
 //Интерпритатор
 #include "./lua/Interpritator.h"

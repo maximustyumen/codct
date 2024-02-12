@@ -82,7 +82,7 @@ BaseSoundObject::BaseSoundObject(std::string name)
 }
 
 //деструктор
-BaseSoundObject::~BaseSoundObject() throw (ErrorClass)
+BaseSoundObject::~BaseSoundObject() 
 {
     try
     {

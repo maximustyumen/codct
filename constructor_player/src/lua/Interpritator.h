@@ -28,7 +28,7 @@ extern "C" {
 //класс описания ошибок
 #include "../error/errorclass.h"
 
-#include "../RTI/Uuencode/uuencode.h"
+//#include "../RTI/Uuencode/uuencode.h"
 
 #include <fstream>
 #include <iostream>
@@ -277,6 +277,7 @@ static int object_AddShadowedGroup(lua_State *L);
 //Определение маски Имя объекта, 4-ничего, 1-принимать, 2-бросать, 3 - и то и другое.
 static int object_SetShadowMask(lua_State *L);
 //---------------------RTI-----------------------------------------
+/*
 static int RTI_CreateFederate( lua_State* pLuaState );
 static int RTI_DestroyFederate( lua_State* pLuaState );
 static int RTI_RegisterSynchronizationPoint( lua_State* pLuaState );
@@ -307,7 +308,7 @@ static int RTI_RemoveProxy( lua_State* pLuaState );
 
 
 static int net_create(lua_State* lua_state);
-
+*/
 //---------------------text-----------------------------------------
 //Создание текстового объекта
 static int text_AddTextObject(lua_State *L);
@@ -897,6 +898,7 @@ void LUAregistration()
 	lua_setglobal (L,"SetShadowMask");
 
         // RTI
+	/*
         lua_pushcfunction( L, RTI_CreateFederate );
 		lua_setglobal( L, "RTI_CreateFederate" );
 		
@@ -946,6 +948,7 @@ void LUAregistration()
 		
 	lua_pushcfunction(L,net_create);
 	lua_setglobal(L,"net_create");
+	*/
 
 	//------------------------------------Text-------------------------------------------
 	//Создание текстового объекта
@@ -3255,6 +3258,7 @@ static int sound_AddReverb(lua_State *L)
 }
 
 //---------------------RTI-----------------------------------------
+/*
 static int RTI_CreateFederate( lua_State* pLuaState )
 {
     //имя федерата
@@ -3551,6 +3555,7 @@ static int net_create(lua_State* lua_state)
 		lua_pushboolean(lua_state, false);
 	return 1;
 }
+*/
 
 //---------------------------персонажи---------------------------------
 //Функция для загрузки и создания персонажа

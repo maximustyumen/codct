@@ -58,7 +58,7 @@
 
 #include <sstream>
 //#include "../../observer.h"
-#include "base/observer.h"
+#include "../../observer.h"
 
 #include "GraphicSceneClassObserver.h"
 
