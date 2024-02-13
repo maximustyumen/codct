@@ -8,7 +8,7 @@
 
 //__DATE__ __TIME__ __cplusplus __STDC__
 
-static std::string player_version = "MAXlab player v.3.2.0 64bit. Author: Maxim Gammer (MaxGammer@gmail.com)";
+static std::string player_version = "codct player v.4.0.0 64bit. (https://github.com/maximustyumen/codct)";
 
 //PhysX
 #ifdef WIN32

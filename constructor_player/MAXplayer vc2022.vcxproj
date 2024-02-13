@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>MAXplayer 11</ProjectName>
+    <ProjectGuid>{0F78CC2F-8A6B-4E4F-817E-DA74B45EEAF3}</ProjectGuid>
+    <RootNamespace>Example osgwindows</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\DEVELOP\openvr-master\headers;D:\DEVELOP_X64\osgopenvrviewer-master\src;C:\DEVELOP\3rdParty_x64\x64\include;D:\DEVELOP_X64\curl-7.32.0\include;C:\DEVELOP\vorbis-master\include;C:\DEVELOP\ogg-master\include;C:\DEVELOP\SDL2-2.30.0\include;C:\DEVELOP\freealut-master\include;C:\DEVELOP\openal-soft-master\include;C:\DEVELOP\openal-soft-master\include\AL;C:\DEVELOP\lua-5.4.2_Win64_dll17_lib\include;C:\DEVELOP\OpenSceneGraph-OpenSceneGraph-3.4.1\build\include;C:\DEVELOP\OpenSceneGraph-OpenSceneGraph-3.4.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\DEVELOP\openvr-master\lib\win64;D:\DEVELOP_X64\osgopenvrviewer-masterr\tempo\lib\Release;D:\DEVELOP_X64\osgoculusviewer-master\tempo\lib\Release;D:\DEVELOP_X64\curl-7.32.0\tempo\lib\Release;D:\DEVELOP_X64\_x64\lib;C:\DEVELOP\lua-5.4.2_Win64_dll17_lib;C:\DEVELOP\OpenSceneGraph-OpenSceneGraph-3.4.1\build\lib;C:\DEVELOP\freealut-master\build\src\Release;C:\DEVELOP\openal-soft-master\build\Release;D:\DEVELOP_X64\CERTI-3.5.1-Source\tempo\Release;C:\DEVELOP\SDL2-2.30.0\lib\x64;C:\DEVELOP\vorbis-master\build\lib\Release;C:\DEVELOP\ogg-master\build\Release;C:\DEVELOP\3rdParty_x64\x64\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/osgwindows.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE; _CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Release/osgwindows.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>rpcrt4.lib;PhysXLoader.lib;NxCooking.lib;NxCharacter.lib;vorbisfile.lib;ogg.lib;SDLmain.lib;SDL.lib;Iphlpapi.lib;NetApi32.lib;osgCal.lib;cal3d.lib;CERTI.lib;FedTime.lib;HLA.lib;RTI-NG.lib;OpenAL32.lib;alut.lib;OpenThreads.lib;opengl32.lib;osg.lib;osgDB.lib;osgGA.lib;osgUtil.lib;osgText.lib;osgAnimation.lib;osgViewer.lib;osgShadow.lib;osgParticle.lib;EMATracker_DLL.lib;EMADevice_DLL.lib;EMAGestureAnalyzer_DLL.LIB;d3d9.lib;lua.lib;osgPPU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./bin/MAXplayer.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>Grdapi32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TypeLibraryName>.\Release/osgwindows.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>RTI_USES_STD_FSTREAM;WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/osgwindows.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>openvr_api.lib;libcurl_imp.lib;rpcrt4.lib;vorbisfile.lib;vorbis.lib;vorbisenc.lib;ogg.lib;SDL2main.lib;SDL2.lib;Iphlpapi.lib;NetApi32.lib;OpenAL32.lib;alut.lib;OpenThreads.lib;opengl32.lib;osg.lib;osgDB.lib;osgGA.lib;osgUtil.lib;osgText.lib;osgAnimation.lib;osgViewer.lib;osgShadow.lib;osgParticle.lib;osgFX.lib;lua54.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./bin/MAXplayer.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>Grdapi32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Debug/osgwindows.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../include;../../../../OpenThreads/include;../../../../Producer/include;../../../../3rdParty/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CONSOLE;FL_DLL;WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Debug/osgwindows.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>OpenThreadsWin32d.lib;producerd.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../bin/MAXplayer.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../../lib;../../../../OpenThreads/lib/win32;../../../../Producer/lib;../../../../3rdParty/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/osgwindowsd.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TypeLibraryName>.\Debug/osgwindows.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>d:\work\maxplayer_build\library\OpenSceneGraph-3.3.0\include;d:\work\maxplayer_build\library\build\OpenSceneGraph-3.3.0\include;d:\work\maxplayer_build\library\3rdParty_x86_x64\x64\include;d:\work\maxplayer_build\library\OculusSDK\LibOVR\Include;d:\work\maxplayer_build\library\SDL-1.2.15\include;d:\work\maxplayer_build\library\SixenseSDK_062612\include;d:\work\maxplayer_build\library\osgPPU\include;d:\work\maxplayer_build\library\openal-soft-1.15.1-bin\include;d:\work\maxplayer_build\library\freealut-1.1.0\include;d:\work\maxplayer_build\library\openal-soft-1.15.1-bin\include\AL;d:\work\maxplayer_build\library\libogg\include;d:\work\maxplayer_build\library\libvorbis\include;d:\work\maxplayer_build\library\cal3d\src;d:\work\maxplayer_build\library\osgCal\include;C:\work\external\lua-5.2.2\src;C:\work\external\CERTI-3.4.3-Source\include;c:\work\external\CERTI-3.4.3-Source\include\hla-1_3\;C:\work\external\net\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/osgwindows.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <PreprocessorDefinitions>RTI_USES_STD_FSTREAM;FL_DLL;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>d:\work\maxplayer_build\library\3rdParty_x86_x64\x64\lib;d:\work\maxplayer_build\library\build\OpenSceneGraph-3.3.0\lib;d:\work\maxplayer_build\library\build\freealut-1.1.0\Debug\;d:\work\maxplayer_build\library\build\osgCal\lib\Debug;d:\work\maxplayer_build\library\build\osgPPU\lib;d:\work\maxplayer_build\library\cal3d\bin\Debug;d:\work\maxplayer_build\library\libogg\win32\VS2010\x64\Debug;d:\work\maxplayer_build\library\libvorbis\win32\VS2010\x64\Debug;d:\work\maxplayer_build\library\OculusSDK\LibOVR\Lib\x64;d:\work\maxplayer_build\library\SDL-1.2.15\lib\x64;d:\work\maxplayer_build\library\SixenseSDK_062612\lib\x64\release_dll;d:\work\maxplayer_build\library\openal-soft-1.15.1-bin\lib\Win64;C:\work\external\CERTI-3.4.3-Source\Debug;c:\work\external\lua-5.2.2\Win32Project1\x64\Debug\;C:\work\external\net\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/osgwindowsd.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <AdditionalDependencies>rpcrt4.lib;alut.lib;libcurld.lib;libogg_d.lib;libvorbis.lib;libvorbisfile.lib;lua.lib;libovr64d.lib;libOpenAL32.dll.a;SDL.lib;SDLmain.lib;sixense_utils_x64.lib;sixense_x64.lib;CERTId.lib;FedTimed.lib;HLAd.lib;RTI-NGd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgGAd.lib;osgParticled.lib;osgUtild.lib;osgTextd.lib;osgShadowd.lib;osgAnimationd.lib;osgViewerd.lib;osgCald.lib;osgPPUd.lib;Iphlpapi.lib;NetApi32.lib;net.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "x64\Debug\MAXplayer 11.exe" c:\Users\open\.professionalgroup\constructor\MAXplayer.exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Scene\SkinAnimation\interface_for_skin_animation.cpp" />
+    <ClCompile Include="src\Scene\SkinAnimation\skin_animation_manager.cpp" />
+    <ClCompile Include="src\Scene\Visitors\ChangeShaderUniformVisitor.cpp" />
+    <ClCompile Include="src\SSAO\ffssao.cpp" />
+    <ClCompile Include="src\TinCan\cJSON.c" />
+    <ClCompile Include="src\TinCan\InterfaceForTinCan.cpp" />
+    <ClCompile Include="src\user\User.cpp" />
+    <ClCompile Include="src\user\UserFoot.cpp" />
+    <ClCompile Include="src\user\UserHands.cpp" />
+    <ClCompile Include="src\user\input\Input.cpp" />
+    <ClCompile Include="src\user\input\InputKeyboard.cpp" />
+    <ClCompile Include="src\user\input\InputKeys.cpp" />
+    <ClCompile Include="src\user\input\keytranslation.cpp" />
+    <ClCompile Include="src\user\input\InputMouse.cpp" />
+    <ClCompile Include="src\user\input\Joystick\InputJoystick.cpp" />
+    <ClCompile Include="src\user\output\Output.cpp" />
+    <ClCompile Include="src\user\output\OutputAudio.cpp" />
+    <ClCompile Include="src\user\output\OutputVideo.cpp" />
+    <ClCompile Include="src\user\FootDataClass.cpp" />
+    <ClCompile Include="src\user\HandsDataClass.cpp" />
+    <ClCompile Include="src\user\HeadDataClass.cpp" />
+    <ClCompile Include="src\user\events\InternalEventClass.cpp" />
+    <ClCompile Include="src\user\JoyDataClass.cpp" />
+    <ClCompile Include="src\Scene\SceneClass.cpp" />
+    <ClCompile Include="src\Scene\Graphic\GraphicSceneClass.cpp" />
+    <ClCompile Include="src\Scene\Audio\AudioSceneClass.cpp" />
+    <ClCompile Include="src\Scene\Audio\BaseSoundObject.cpp" />
+    <ClCompile Include="src\Scene\Visitors\FindAnimationByName.cpp" />
+    <ClCompile Include="src\Scene\Visitors\FindGeometry.cpp" />
+    <ClCompile Include="src\Scene\Visitors\FindImageStreamsVisitor.cpp" />
+    <ClCompile Include="src\Scene\Visitors\FindLightByName.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Visitors\FindNodeByName.cpp" />
+    <ClCompile Include="src\Scene\Visitors\FindTexture.cpp" />
+    <ClCompile Include="src\Scene\Visitors\RenameAllNode.cpp" />
+    <ClCompile Include="src\Scene\HUD\InterfaceForHUD.cpp" />
+    <ClCompile Include="src\Scene\OLD\Base3DObject.cpp" />
+    <ClCompile Include="src\Scene\OLD\InterfaceForOLD.cpp" />
+    <ClCompile Include="src\Scene\Text\BaseTextObject.cpp" />
+    <ClCompile Include="src\Scene\Text\InterfaceForText.cpp" />
+    <ClCompile Include="src\Scene\Shaders\BumpMaterial.cpp" />
+    <ClCompile Include="src\Scene\Shaders\InterfaceForShaders.cpp" />
+    <ClCompile Include="src\Scene\Light\InterfaceForLight.cpp" />
+    <ClCompile Include="src\Scene\Video\BaseVideoObject.cpp" />
+    <ClCompile Include="src\Scene\Video\InterfaceForVideo.cpp" />
+    <ClCompile Include="src\Scene\Particle\BaseParticleObject.cpp" />
+    <ClCompile Include="src\Scene\Particle\InterfaceForParticle.cpp" />
+    <ClCompile Include="src\Scene\CustomGeometry\CustomGeometry.cpp" />
+    <ClCompile Include="src\Scene\Cameras\interfaceforcameras.cpp" />
+    <ClCompile Include="src\Configure\Configure.cpp" />
+    <ClCompile Include="src\Configure\Console.cpp" />
+    <ClCompile Include="src\error\errorclass.cpp" />
+    <ClCompile Include="src\Arduino\SerialClass.cpp" />
+    <ClCompile Include="src\SCORM\interfaceforscorm.cpp" />
+    <ClCompile Include="src\MAXplayer.cpp" />
+    <ClCompile Include="src\ThreadExample.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\VR\osgOpenVR\openvrdevice.cpp" />
+    <ClCompile Include="src\VR\osgOpenVR\openvreventhandler.cpp" />
+    <ClCompile Include="src\VR\osgOpenVR\openvrupdateslavecallback.cpp" />
+    <ClCompile Include="src\VR\osgOpenVR\openvrviewer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Scene\SkinAnimation\interface_for_skin_animation.h" />
+    <ClInclude Include="src\Scene\SkinAnimation\skin_animation_manager.h" />
+    <ClInclude Include="src\SSAO\ffssao.h" />
+    <ClInclude Include="src\user\input\Joystick\InputJoystick.h" />
+    <ClInclude Include="src\Scene\Graphic\GraphicContext.h" />
+    <ClInclude Include="src\Scene\Video\BaseVideoObject.h" />
+    <ClInclude Include="src\VR\osgOpenVR\openvrdevice.h" />
+    <ClInclude Include="src\VR\osgOpenVR\openvreventhandler.h" />
+    <ClInclude Include="src\VR\osgOpenVR\openvrupdateslavecallback.h" />
+    <ClInclude Include="src\VR\osgOpenVR\openvrviewer.h" />
+    <CustomBuild Include="src\Scene\Particle\ParticleHelper.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="src\Scene\Cameras\interfaceforcameras.h" />
+    <ClInclude Include="src\lua\Interpritator.h" />
+    <ClInclude Include="src\lua\os_clock.h" />
+    <ClInclude Include="src\lua\SupportExternLibs.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\Configure\Configure.h" />
+    <ClInclude Include="src\Configure\Console.h" />
+    <ClInclude Include="src\error\errorclass.h" />
+    <ClInclude Include="src\Arduino\SerialClass.h" />
+    <ClInclude Include="src\BuildConfig.h" />
+    <ClInclude Include="src\SCORM\interfaceforscorm.h" />
+    <ClInclude Include="src\MAXplayer.h" />
+    <ClInclude Include="src\user\output\ScreenShot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\shaders\bumpmap.frag" />
+    <None Include="bin\shaders\bumpmap.vert" />
+    <None Include="bin\shaders\sky.frag" />
+    <None Include="bin\shaders\sky.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\inWork\BUGS.txt" />
+    <Text Include="src\inWork\CHANGELOG.txt" />
+    <Text Include="src\inWork\README.txt" />
+    <Text Include="src\inWork\WORK.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="myapp.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -33,38 +33,43 @@ void UserHandsClass::CreateHydraHands()
     root->asGroup()->addChild(HandCursor.get()); 
 	*/
 		
+    
     osg::ref_ptr<FindNamedNodeVisitor> fnnv = new FindNamedNodeVisitor("__Hand1__AIR_");
     root->asGroup()->accept(*fnnv.get());
     if (!fnnv->_foundNodes.empty())
     {
-		cursorHand = fnnv->_foundNodes.front().get();
+		//cursorHand = fnnv->_foundNodes.front().get();
+        cursorHand = new osg::MatrixTransform();
     }
     else
     {
-		throw (ErrorClass (__FILE__, __LINE__ , "InputHydraClass::InputHydraClass()", "__Hand1__AIR_ not find in HandCursor.fbx !!!", 6));
+		//throw (ErrorClass (__FILE__, __LINE__ , "InputHydraClass::InputHydraClass()", "__Hand1__AIR_ not find in HandCursor.fbx !!!", 6));
     }
 
 	osg::ref_ptr<FindNamedNodeVisitor> fnnv2 = new FindNamedNodeVisitor("PALEZ_AIR");
 	root->asGroup()->accept(*fnnv2.get());
     if (!fnnv2->_foundNodes.empty())
     {
-		cursorHandPalez = fnnv2->_foundNodes.front().get();
+		//cursorHandPalez = fnnv2->_foundNodes.front().get();
+        cursorHandPalez = new osg::MatrixTransform();
     }
     else
     {
-		throw (ErrorClass (__FILE__, __LINE__ , "InputHydraClass::InputHydraClass()", "PALEZ_AIR not find in HandCursor.fbx !!!", 6));
+		//throw (ErrorClass (__FILE__, __LINE__ , "InputHydraClass::InputHydraClass()", "PALEZ_AIR not find in HandCursor.fbx !!!", 6));
     }
 
 	osg::ref_ptr<FindNamedNodeVisitor> fnnv3 = new FindNamedNodeVisitor("__Hand2__AIR_");
     root->asGroup()->accept(*fnnv3.get());
     if (!fnnv3->_foundNodes.empty())
     {
-		cursorHand2 = fnnv3->_foundNodes.front().get();
+		//cursorHand2 = fnnv3->_foundNodes.front().get();
+        cursorHand2 = new osg::MatrixTransform();
     }
     else
     {
-		throw (ErrorClass (__FILE__, __LINE__ , "InputHydraClass::InputHydraClass()", "__Hand2__AIR_ not find in HandCursor.fbx !!!", 6));
+		//throw (ErrorClass (__FILE__, __LINE__ , "InputHydraClass::InputHydraClass()", "__Hand2__AIR_ not find in HandCursor.fbx !!!", 6));
     }
+    
 }
 
 /// найти элемент стэка трансформаций
@@ -82,6 +87,7 @@ osgAnimation::StackedTransformElement* find_stacked_transform_element(osgAnimati
 
 void UserHandsClass::UpdateVRHands(HtcViveData data, float body_x, float body_y, float body_z)
 {
+    return;
 	if (data.presend==false)
 	{
 		hydra_presend = false;

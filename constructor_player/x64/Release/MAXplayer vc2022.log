@@ -1,0 +1,90 @@
+﻿cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  interface_for_skin_animation.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  skin_animation_manager.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  ChangeShaderUniformVisitor.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  ffssao.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  InterfaceForTinCan.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  User.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  UserFoot.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  UserHands.cpp
+  Input.cpp
+  InputKeyboard.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  InputKeys.cpp
+  keytranslation.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  InputMouse.cpp
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  InputJoystick.cpp
+  Output.cpp
+  OutputAudio.cpp
+C:\GIT\codct\constructor_player\src\TinCan\InterfaceForTinCan.cpp(18,18): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  OutputVideo.cpp
+  FootDataClass.cpp
+  HandsDataClass.cpp
+  HeadDataClass.cpp
+  InternalEventClass.cpp
+  JoyDataClass.cpp
+  SceneClass.cpp
+  GraphicSceneClass.cpp
+  AudioSceneClass.cpp
+  BaseSoundObject.cpp
+  FindAnimationByName.cpp
+  FindGeometry.cpp
+  FindImageStreamsVisitor.cpp
+  FindNodeByName.cpp
+  FindTexture.cpp
+  RenameAllNode.cpp
+  InterfaceForHUD.cpp
+  Base3DObject.cpp
+  InterfaceForOLD.cpp
+  BaseTextObject.cpp
+  InterfaceForText.cpp
+  BumpMaterial.cpp
+  InterfaceForShaders.cpp
+  InterfaceForLight.cpp
+  BaseVideoObject.cpp
+  InterfaceForVideo.cpp
+  BaseParticleObject.cpp
+  InterfaceForParticle.cpp
+  CustomGeometry.cpp
+  interfaceforcameras.cpp
+  Configure.cpp
+  Console.cpp
+  errorclass.cpp
+  SerialClass.cpp
+  interfaceforscorm.cpp
+  MAXplayer.cpp
+  openvrdevice.cpp
+  openvreventhandler.cpp
+  openvrupdateslavecallback.cpp
+  openvrviewer.cpp
+C:\GIT\codct\constructor_player\src\VR\osgOpenVR\openvrdevice.cpp(555,34): warning C4312: приведение типов: преобразование из "GLuint" в "void *" большего размера
+C:\GIT\codct\constructor_player\src\VR\osgOpenVR\openvrdevice.cpp(556,35): warning C4312: приведение типов: преобразование из "GLuint" в "void *" большего размера
+C:\GIT\codct\constructor_player\src\Scene\Particle\InterfaceForParticle.cpp(167): warning C4715: InterfaceForParticle::FindParticleObject: значение возвращается не при всех путях выполнения
+C:\GIT\codct\constructor_player\src\Scene\Particle\InterfaceForParticle.cpp(55): warning C4715: InterfaceForParticle::AddParticle: значение возвращается не при всех путях выполнения
+C:\GIT\codct\constructor_player\src\Scene\Video\InterfaceForVideo.cpp(92): warning C4715: InterfaceForVideo::CreateVideoPlane: значение возвращается не при всех путях выполнения
+C:\GIT\codct\constructor_player\src\Scene\Video\InterfaceForVideo.cpp(172): warning C4715: InterfaceForVideo::FindVideoObject: значение возвращается не при всех путях выполнения
+C:\GIT\codct\constructor_player\src\MAXplayer.cpp(82): warning C4700: использована неинициализированная локальная переменная "developmode"
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  cJSON.c
+C:\GIT\codct\constructor_player\src\TinCan\cJSON.c(374,30): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
+C:\GIT\codct\constructor_player\src\TinCan\cJSON.c(474,49): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
+cl : командная строка  warning D9002: пропуск неизвестного параметра "/arch:SSE2"
+  FindLightByName.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1389,5): warning MSB8012: TargetPath(C:\GIT\codct\constructor_player\x64\Release\MAXplayer 11.exe) не соответствует значению свойства выходного файла (C:\GIT\codct\constructor_player\bin\MAXplayer.exe) для Linker. Это может привести к неправильной сборке проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Link.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1391,5): warning MSB8012: TargetName(MAXplayer 11) не соответствует значению свойства выходного файла (MAXplayer) для Linker. Это может привести к неправильной сборке проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Link.OutputFile).
+  MAXplayer vc2022.vcxproj -> C:\GIT\codct\constructor_player\x64\Release\MAXplayer 11.exe
