@@ -9,12 +9,22 @@ email                : GammerMax@yandex.ru
 
 #include "../BuildConfig.h"
 
+
 //Lua
+#ifdef WIN32
 extern "C" {
 #include <lua.h>
 #include <lauxlib.h>
 #include <lualib.h>
 }
+#else
+extern "C" {
+#include <lua5.4/lua.h>
+#include <lua5.4/lauxlib.h>
+#include <lua5.4/lualib.h>
+}
+
+#endif
 
 //Модуль вызова функций из внешних библиотек
 #include "./SupportExternLibs.h"

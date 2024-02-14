@@ -1840,6 +1840,7 @@ osg::StateSet* GraphicSceneClass::createVolumeTextureState()
 //Создание отдельной группы теней, параметр - имя группы
 bool GraphicSceneClass::AddShadowedGroup(std::string name)
 {
+	#ifdef WIN32
 	osgShadow::ShadowedScene* newShadowedGroup = new osgShadow::ShadowedScene;
 	int ReceivesShadowTraversalMask = 0x1;
 	int CastsShadowTraversalMask = 0x2;
@@ -1858,6 +1859,7 @@ bool GraphicSceneClass::AddShadowedGroup(std::string name)
 
 	//добавляем эту группу в сцену. Все объекты, которые находятся в этой группе и имеют маску 0x1 - принимают тени, 0x2 - передают, & - и то и другое, 0 - ничего не делают.
 	root->addChild(newShadowedGroup);
+	#endif
 	return true;
 }
 

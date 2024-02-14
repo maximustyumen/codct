@@ -9,7 +9,11 @@
 #define _OSG_OPENVRDEVICE_H_
 
 // Include the OpenVR SDK
+#ifdef WIN32
 #include <openvr.h>
+#else
+#include <openvr/openvr.h>
+#endif
 
 #include <osg/Geode>
 #include <osg/Texture2D>

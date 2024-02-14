@@ -40,7 +40,9 @@ UserClass::UserClass(Configure* _configuration, osg::ref_ptr<osgViewer::Viewer> 
 	if (configuration->GetRecordString("#HTC_VIVE_ON") == "ON")
 	{
 		//нужно передать информацию с VIVE на UserInput
+		#ifdef WIN32
 		UserInput->SetOpenvrDevice(UserOutput->GetOpenvrDevice());
+		#endif
 	}
 
 	//

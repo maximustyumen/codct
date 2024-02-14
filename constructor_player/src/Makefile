@@ -6,31 +6,26 @@ ifeq ($(shell uname -m),x86_64)
     LDFLAGS= \
         /usr/lib/x86_64-linux-gnu/libX11.so \
         /usr/lib/x86_64-linux-gnu/libXmu.so.6 \
-        /usr/lib64/libosg.so \
-        /usr/lib64/libosgDB.so \
-        /usr/lib64/libosgGA.so \
-        /usr/lib64/libosgText.so \
-        /usr/lib64/libosgUtil.so \
-        /usr/lib64/libosgViewer.so \
-        /usr/lib64/libosgShadow.so \
-        /usr/lib64/libosgParticle.so \
-        /usr/lib64/libosgAnimation.so \
-        /usr/lib/libalut.so.0 \
+		/usr/lib/x86_64-linux-gnu/libOpenThreads.so \
+        /usr/lib/x86_64-linux-gnu/libosg.so \
+        /usr/lib/x86_64-linux-gnu/libosgDB.so \
+        /usr/lib/x86_64-linux-gnu/libosgGA.so \
+        /usr/lib/x86_64-linux-gnu/libosgText.so \
+        /usr/lib/x86_64-linux-gnu/libosgUtil.so \
+        /usr/lib/x86_64-linux-gnu/libosgViewer.so \
+       	/usr/lib/x86_64-linux-gnu/libosgParticle.so \
+        /usr/lib/x86_64-linux-gnu/libosgAnimation.so \
+        /usr/lib/x86_64-linux-gnu/libalut.so \
         /usr/lib/x86_64-linux-gnu/libopenal.so \
         /usr/lib/x86_64-linux-gnu/libGL.so \
         /usr/lib/x86_64-linux-gnu/libGLU.so \
-        /usr/lib/x86_64-linux-gnu/liblua5.2.so \
-        /usr/lib/x86_64-linux-gnu/libSDL-1.2.so.0 \
-        /usr/lib64/libosgCal.so \
-        /usr/lib/libCERTI.so \
-        /usr/lib/libRTI-NG.so \
-        /usr/lib/libHLA.so \
-        /usr/lib/libFedTime.so \
+        /usr/lib/x86_64-linux-gnu/liblua5.4.so \
+		/usr/lib/x86_64-linux-gnu/libSDL.so \
         /usr/lib/x86_64-linux-gnu/libvorbisfile.so.3 \
         /usr/lib/x86_64-linux-gnu/libogg.so.0 \
-        /usr/lib/libosgPPU.so \
-	/usr/lib/x86_64-linux-gnu/libglut.so \
-	/usr/lib/x86_64-linux-gnu/libcurl.so
+		/usr/lib/x86_64-linux-gnu/libglut.so \
+		/usr/lib/x86_64-linux-gnu/libcurl.so \
+		/usr/lib/x86_64-linux-gnu/libopenvr_api.so
 else
 
     LDFLAGS= \
@@ -62,7 +57,7 @@ else
 endif
    
 
-CPPFLAGS +=  \
+CPPFLAGS +=  -std=c++11 \
         -I/usr/include/SDL \
         -I/usr/include/lua5.2 \
         -I/home/maximum2000/DEVELOP/CERTI-3.4.1-Source/include
@@ -92,8 +87,6 @@ MAXplayer.exe :  \
     SceneClass.o \
     AudioSceneClass.o \
     BaseSoundObject.o \
-    BaseCharacter.o \
-    InterfaceForCharacters.o \
     GraphicSceneClass.o \
     InterfaceForHUD.o \
     lightManager.o \
@@ -120,17 +113,17 @@ MAXplayer.exe :  \
     InterfaceForTinCan.o \
     cJSON.o \
     Console.o \
-    federate.o \
-    federate_ambassador.o \
     uuencode.o \
     CustomGeometry.o \
-    ShieldLinux.o \
     errorclass.o \
     interfaceforcameras.o \
     proxy.o \
     SerialClass.o \
-    PostProcessing.o \
-    BumpMaterial.o
+    BumpMaterial.o \
+	skin_animation_manager.o \
+	interface_for_skin_animation.o \
+	ChangeShaderUniformVisitor.o
+	
 
 
         
@@ -158,8 +151,6 @@ MAXplayer.exe :  \
     SceneClass.o \
     AudioSceneClass.o \
     BaseSoundObject.o \
-    BaseCharacter.o \
-    InterfaceForCharacters.o \
     GraphicSceneClass.o \
     InterfaceForHUD.o \
     lightManager.o \
@@ -185,17 +176,16 @@ MAXplayer.exe :  \
     InterfaceForTinCan.o \
     cJSON.o \
     Console.o \
-    federate.o \
-    federate_ambassador.o \
     uuencode.o \
     CustomGeometry.o \
-    ShieldLinux.o \
     errorclass.o \
     interfaceforcameras.o \
     proxy.o \
     SerialClass.o \
-    PostProcessing.o \
     BumpMaterial.o \
+	skin_animation_manager.o \
+	interface_for_skin_animation.o \
+	ChangeShaderUniformVisitor.o \
     -o ../bin/MAXplayer.exe $(LDFLAGS) 
 
 #PostProcessing.o \
@@ -264,12 +254,6 @@ AudioSceneClass.o : ./Scene/Audio/AudioSceneClass.cpp
 BaseSoundObject.o : ./Scene/Audio/BaseSoundObject.cpp
 	g++ -c ./Scene/Audio/BaseSoundObject.cpp $(CPPFLAGS)
 
-BaseCharacter.o : ./Scene/Characters/BaseCharacter.cpp
-	g++ -c ./Scene/Characters/BaseCharacter.cpp $(CPPFLAGS)
-
-InterfaceForCharacters.o : ./Scene/Characters/InterfaceForCharacters.cpp
-	g++ -c ./Scene/Characters/InterfaceForCharacters.cpp $(CPPFLAGS)
-
 GraphicSceneClass.o : ./Scene/Graphic/GraphicSceneClass.cpp
 	g++ -c ./Scene/Graphic/GraphicSceneClass.cpp $(CPPFLAGS)
 
@@ -321,12 +305,6 @@ FindTexture.o : ./Scene/Visitors/FindTexture.cpp
 RenameAllNode.o : ./Scene/Visitors/RenameAllNode.cpp
 	g++ -c ./Scene/Visitors/RenameAllNode.cpp $(CPPFLAGS)
 
-federate.o : ./RTI/federate.cpp
-	g++ -c ./RTI/federate.cpp $(CPPFLAGS)
-
-federate_ambassador.o : ./RTI/federate_ambassador.cpp
-	g++ -c ./RTI/federate_ambassador.cpp $(CPPFLAGS)
-
 uuencode.o : ./RTI/Uuencode/uuencode.cpp
 	g++ -c ./RTI/Uuencode/uuencode.cpp $(CPPFLAGS)
 
@@ -357,9 +335,6 @@ BaseTextObject.o : ./Scene/Text/BaseTextObject.cpp
 BaseVideoObject.o : ./Scene/Video/BaseVideoObject.cpp
 	g++ -c ./Scene/Video/BaseVideoObject.cpp $(CPPFLAGS)
 
-ShieldLinux.o : ./Shield/ShieldLinux.cpp
-	g++ -c ./Shield/ShieldLinux.cpp $(CPPFLAGS)	
-
 errorclass.o : ./error/errorclass.cpp
 	g++ -c ./error/errorclass.cpp $(CPPFLAGS)
 
@@ -372,12 +347,18 @@ proxy.o : ./RTI/proxy.cpp
 SerialClass.o : ./Arduino/SerialClass.cpp
 	g++ -c ./Arduino/SerialClass.cpp $(CPPFLAGS)
 
-PostProcessing.o : ./user/output/PostProcessing.cpp
-	g++ -c ./user/output/PostProcessing.cpp $(CPPFLAGS)
-
 BumpMaterial.o : ./Scene/Shaders/BumpMaterial.cpp
 	g++ -c ./Scene/Shaders/BumpMaterial.cpp $(CPPFLAGS)
-
+	
+skin_animation_manager.o : ./Scene/SkinAnimation/skin_animation_manager.cpp
+	g++ -c ./Scene/SkinAnimation/skin_animation_manager.cpp $(CPPFLAGS)
+	
+interface_for_skin_animation.o : ./Scene/SkinAnimation/interface_for_skin_animation.cpp
+	g++ -c ./Scene/SkinAnimation/interface_for_skin_animation.cpp $(CPPFLAGS)
+	
+ChangeShaderUniformVisitor.o : ./Scene/Visitors/ChangeShaderUniformVisitor.cpp
+	g++ -c ./Scene/Visitors/ChangeShaderUniformVisitor.cpp $(CPPFLAGS)
+	
 
 #цель - очистка от веременных файлов
 clean:

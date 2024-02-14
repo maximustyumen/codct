@@ -27,6 +27,8 @@ void OutputVideoClass::PseudoFullScreenMode()
 		std::cout <<"Error, no WindowSystemInterface available, cannot getWindowingSystemInterface."<<std::endl; 
 		return; 
 	} 
+	
+	#ifdef WIN32
 
 	unsigned int width, height; 
 	wsi->getScreenResolution(osg::GraphicsContext::ScreenIdentifier(0), 	width, height); 
@@ -59,6 +61,8 @@ void OutputVideoClass::PseudoFullScreenMode()
 	osg::GraphicsContext* gc = osg::GraphicsContext::createGraphicsContext(traits.get());
 	viewer->getCamera()->setGraphicsContext(gc); 
 	viewer->getCamera()->setViewport(new osg::Viewport(0, 0, traits->width, traits->height)); 
+	
+	#endif
 }
 
 
@@ -98,7 +102,7 @@ OutputVideoClass::OutputVideoClass(Configure* configuration, osg::ref_ptr<osgVie
 		}
 		///////////////
 
-
+		#ifdef WIN32
 		if ((configuration->GetRecordString("#windowed") != "1") && (configuration->GetRecordString("#pseudofullscreen") != "ON") && (m_oculus_enable == false) && (m_htc_vive_enable == false) )
 		{
 			 HDC screen = GetDC(0);
@@ -157,6 +161,7 @@ OutputVideoClass::OutputVideoClass(Configure* configuration, osg::ref_ptr<osgVie
 
 			
 		}
+		#endif
 
 		if (m_oculus_enable == true)
 		{
@@ -335,6 +340,7 @@ OutputVideoClass::OutputVideoClass(Configure* configuration, osg::ref_ptr<osgVie
 	////////////////////
 	if(m_htc_vive_enable == true)
 	{
+		#ifdef WIN32
 		std::cout << "HTC VIVE 1" << std::endl;
 
 
@@ -410,7 +416,7 @@ OutputVideoClass::OutputVideoClass(Configure* configuration, osg::ref_ptr<osgVie
 		// Add statistics handler
 		//viewer.addEventHandler(new osgViewer::StatsHandler);
 		//viewer.addEventHandler(new OpenVREventHandler(openvrDevice));
-
+		#endif
 
 		#ifdef WIN32
 			// Get windows handle for viewer window and set the viewer window icon 
@@ -422,6 +428,7 @@ OutputVideoClass::OutputVideoClass(Configure* configuration, osg::ref_ptr<osgVie
 			}	
 		#endif
 
+		
 
 	}
 
@@ -527,8 +534,10 @@ OutputVideoClass::~OutputVideoClass()
 	////////////////////
 	if(m_htc_vive_enable == true)
 	{
+		#ifdef WIN32
 		// Need to do this here to make it happen before destruction of the OSG Viewer, which destroys the OpenGL context.
 		openvrDevice->shutdown(htc_vive_gc.get());
+		#endif
 	}
 
 
@@ -603,11 +612,13 @@ void OutputVideoClass::setDataToVideoViewer(osg::ref_ptr<osg::Node> root, osg::N
 	
 	if(m_htc_vive_enable)
 	{
+		#ifdef WIN32
 		std::cout << "HTC VIVE 11" << std::endl;
 		osg::ref_ptr<OpenVRViewer> openvrViewer = new OpenVRViewer(viewer, openvrDevice, openvrRealizeOperation);
 		openvrViewer->addChild(root);
 		viewer->setSceneData(openvrViewer);
 		std::cout << "HTC VIVE 22" << std::endl;
+		#endif
 	}
 
 	if ((m_oculus_enable==false)&&(m_htc_vive_enable==false))

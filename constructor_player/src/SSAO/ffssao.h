@@ -7,7 +7,9 @@
 #ifndef __FFSSAO_Header_
 #define __FFSSAO_Header_
 
+#ifdef WIN32
 #include <Windows.h>
+#endif
 
 
 #include <osgDB/ReadFile>

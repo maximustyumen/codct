@@ -11,7 +11,7 @@
 #include <osgDB/WriteFile>
 #include <osgDB/DatabasePager>
 
-
+#ifdef WIN32
 #include <osgShadow/ShadowedScene>
 #include <osgShadow/ShadowVolume>
 #include <osgShadow/ShadowTexture>
@@ -20,6 +20,7 @@
 #include <osgShadow/ParallelSplitShadowMap>
 #include <osgShadow/LightSpacePerspectiveShadowMap>
 #include <osgShadow/StandardShadowMap>
+#endif
 
 //интерфейсы
 #include "./SkinAnimation/interface_for_skin_animation.h"

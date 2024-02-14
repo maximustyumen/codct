@@ -11,10 +11,15 @@ copyright            : (c) ООО Современные образовател�
 InputJoystickClass::InputJoystickClass()
 {
 	std::cout << "\tInputJoystickClass constructor ... " <<std::endl;
+	
+	#ifndef WIN32
+	return;
+	#endif
+	
 	//информация о версии
-	SDL_version v;
-	SDL_GetVersion(&v);
-	printf("\tSDL version: %u.%u.%u\n", v.major, v.minor, v.patch);
+	//SDL_version v;
+	//SDL_GetVersion(&v);
+	//printf("\tSDL version: %u.%u.%u\n", v.major, v.minor, v.patch);
 
 	// Initialize the joystick subsystem
 	SDL_InitSubSystem(SDL_INIT_JOYSTICK);
@@ -76,6 +81,9 @@ InputJoystickClass::InputJoystickClass()
 
 void InputJoystickClass::update()
 {
+	#ifndef WIN32
+	return;
+	#endif
 	
 	//есть ли джойстики
 	if (Joysticks.JoysticksNum<=0) return;

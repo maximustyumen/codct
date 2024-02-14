@@ -35,10 +35,12 @@ public:
     //полное кеширование уже подключенных к viewer'у данных
     void FullCompileScene(bool);
 
+	#ifdef WIN32
 	osg::ref_ptr<OpenVRDevice> GetOpenvrDevice () 
 	{
 		return VideoOutput->GetOpenvrDevice();
 	}
+	#endif
 
 private:
 	OutputVideoClass* VideoOutput;

@@ -28,7 +28,9 @@
 
 //#include "../output/PostProcessing.h"
 
+#ifdef WIN32
 #include "../../VR/osgOpenVR/openvrviewer.h"
+#endif
 
 //class OculusConfig;
 
@@ -57,10 +59,12 @@ public:
 
 	void update();
 
+	#ifdef WIN32
 	osg::ref_ptr<OpenVRDevice> GetOpenvrDevice () 
 	{
 		return openvrDevice;
 	}
+	#endif
 	
 
 private:
@@ -90,10 +94,12 @@ private:
 	osg::ref_ptr<osgText::Text> updateText;
 
 
+	#ifdef WIN32
 	//htc
 	osg::ref_ptr<OpenVRDevice> openvrDevice;
 	osg::ref_ptr<OpenVRRealizeOperation> openvrRealizeOperation;
 	osg::ref_ptr<osg::GraphicsContext> htc_vive_gc;
+	#endif
 
 
 	//dpi fix
