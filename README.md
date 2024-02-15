@@ -88,3 +88,9 @@ codct\constructor_player\DEPENDENCY
    
 ## Сборка на Android 
 Сборка на андроид производится в соответствии с официальной [документацией](https://www.openscenegraph.com/index.php/documentation/platform-specifics/android/43-building-openscenegraph-for-android-3-0-2) на OSG.
+https://www.openscenegraph.com/index.php/documentation/platform-specifics/android/178-building-openscenegraph-for-android-3-4
+### Видео процесса сборки приложений на основе OSG в Android
+https://rutube.ru/video/b2933dc78abc4145deded37294f41dd8/
+### Пошаговое руководство по сборке 
+https://github.com/OGStudio/openscenegraph-cross-platform-guide/tree/master/1.8.SampleUnderAndroid
+
