@@ -19,122 +19,49 @@
 + Шлем VR линейки HTC Vive Elite, Pro и выше;
 + Базовые станции для трекинга датчиков.
 
-## Сборка в Lunux'е (Ubuntu версия старше 18.04)
+## Сборка в Lunux'е (Ubuntu 20.04.1 x86_64)
 Прежде всего обновляем базу репозиториев:
 ```
 sudo apt-get update
 ```
-Далее, по порядку:
-1. Ставим cmake
-```
-sudo apt-get install cmake
-```
-2. Устанавливаем OSG
-```
-sudo apt-get install -y openscenegraph
-```
-3. Устанавливаем и собираем freetype2-devel
-```
-sudo apt-get install -y libfreetype-dev
-```
-4. Устанавливаем и собираем giflib-devel
-```
-sudo apt-get install -y libgif-dev
-```
-5. Устанавливаем и собираем zlib-devel
-```
-sudo apt-get install -y zlib1g
-sudo apt-get install -y zlib1g-dev
-```
-6. Устанавливаем и собираем libpng-devel
-```
-sudo apt-get install libpng-dev
-```
-7. Устанавливаем и собираем libjpeg-devel
-```
-sudo apt-get install libjpeg-dev
-```
-8. Устанавливаем и собираем mesa-devel
-```
-sudo add-apt-repository ppa:oibaf/graphics-drivers
-sudo apt-get update
-sudo apt-get upgrade
-```
-9. Устанавливаем и собираем распаковываем Certi
-```
-скачайте [пакет](http://download.savannah.nongnu.org/releases/certi/)
-tar zxvf certi-3.4.0-Source.tar.gz
-mkdir build_certi
-cd build_certi
-cmake
-make
-make install
-make package
-```
-10. Устанавливаем и собираем bison, flex, m4
-```
-sudo apt-get install flex bison
-sudo apt-get install libxml2-dev
-sudo apt-get install libx11-dev xbitmaps
-```
-11. define RTI_USES_STD_FSTREAM.
-12. Устанавливаем и собираем  freealut, openal, libvorbis, libvorbis-devel
-```
-sudo apt-get install -y libalut-dev
-
-git clone git@github.com:kcat/openal-soft.git
-cd openal-soft 
-cd build
-cmake ..
+sudo apt install gcc
+sudo apt -y install openscenegraph
+sudo apt install libopenscenegraph-dev
+sudo apt install git
+sudo apt install make
+sudo apt install lua5.4 
+sudo apt install libsdl2-2.0-0
+sudo apt install libsdl1.2-dev
+sudo apt install g++ 
+sudo apt install curl
+sudo apt -y install libcurl4-openssl-dev
+sudo apt -y install libopenvr-dev
+sudo apt install libopenal-dev
+sudo apt install libalut-dev
+sudo apt install liblua5.3-dev
+sudo apt install libsdl2-dev
+sudo apt install libvorbis-dev
+sudo apt install freeglut3-dev
+sudo apt install libsdl1.2-dev
+mkdir codct
+cd codct
+~/codct$ git clone https://github.com/maximustyumen/codct . 
+cd constructor_player/ cd src
 make
 
-sudo apt-get install -y libvorbis-dev
-```
-13. Распаковываем Bullet
-```
-sudo snap install bullet
-```
-14. Распаковываем Lua
-```
-sudo apt-get install lua5.3
-```
-15. readline-devel
-```
-sudo apt-get install libreadline6 libreadline6-dev
-```
-16. Распаковываем Cal3D
-```
-sudo apt-get install libcal3d12-dev
-```
-17. Распаковываем OsgCal
-```
-sudo apt-get install osgcal
-```
-18. SDL, SDL-devel
-```
-sudo apt-get install libsdl2-dev libsdl2-2.0-0 -y;
-```
 
 ## Сборка в Windows
-### Список зависимостей [тут](https://objexx.com/OpenSceneGraph.html)
-+ OpenSceneGraph 3.6.5 (VC2022 2023/01 Build)
-+ curl 7.87.0
-+ FBX 2020.3.2
-+ ffmpeg 4.4.1
-+ freetype 2.12.0
-+ GDAL 3.0.6
-+ giflib 5.2.1
-+ glut 3.7
-+ libjpeg 9e
-+ libpng 1.6.39
-+ libtiff 4.5.0
-+ minizip git
-+ zlib 1.2.13
+### Для сборки порлностью самостоятельно - список зависимостей [тут](https://objexx.com/OpenSceneGraph.html , [так](https://habr.com/ru/articles/429816/) или [так](https://www.openscenegraph.com/index.php/documentation/platform-specifics/windows).
+### Мы уже подготовили готовые библиотеки:
+Все необходимые библиотеки находятся в каталоге
+codct\constructor_player\DEPENDENCY
+
 ### Процесс установки
 1. [Устанавливаем VisualStudio 2019 или VS2022](https://learn.microsoft.com/ru-ru/visualstudio/install/install-visual-studio?view=vs-2022).
 2. Устанавливаем [CMAKE](https://cpp-python-nsu.inp.nsk.su/textbook/sec2/ch5).
-3. Собираем OSG [так](https://habr.com/ru/articles/429816/) или [так](https://www.openscenegraph.com/index.php/documentation/platform-specifics/windows).
-4. Открыть проект в VisualStudio и собрать конструктор.
+3. Распаковать все архивы из codct\constructor_player\DEPENDENCY в свои каталоги
+4. Последовательно для каждого каталога выполнить сборку проектов через CMake, открыть получившийся проект в VisualStudio и собрать в режиме Release
+5. Открыть проект CODCT в VisualStudio и собрать конструктор (при необходимости настроить каталоги подключаемых заголовочных файлов и каталог библиотек на пути codct\constructor_player\DEPENDENCY).
    
 ## Сборка на Android 
 Сборка на андроид производится в соответствии с официальной [документацией](https://www.openscenegraph.com/index.php/documentation/platform-specifics/android/43-building-openscenegraph-for-android-3-0-2) на OSG.
