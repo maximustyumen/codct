@@ -25,28 +25,51 @@
 sudo apt-get update
 ```
 sudo apt install gcc
+
 sudo apt -y install openscenegraph
+
 sudo apt install libopenscenegraph-dev
+
 sudo apt install git
+
 sudo apt install make
+
 sudo apt install lua5.4 
+
 sudo apt install libsdl2-2.0-0
+
 sudo apt install libsdl1.2-dev
+
 sudo apt install g++ 
+
 sudo apt install curl
+
 sudo apt -y install libcurl4-openssl-dev
+
 sudo apt -y install libopenvr-dev
+
 sudo apt install libopenal-dev
+
 sudo apt install libalut-dev
+
 sudo apt install liblua5.3-dev
+
 sudo apt install libsdl2-dev
+
 sudo apt install libvorbis-dev
+
 sudo apt install freeglut3-dev
+
 sudo apt install libsdl1.2-dev
+
 mkdir codct
+
 cd codct
+
 ~/codct$ git clone https://github.com/maximustyumen/codct . 
+
 cd constructor_player/ cd src
+
 make
 
 
