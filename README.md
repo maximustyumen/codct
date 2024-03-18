@@ -34,7 +34,7 @@ sudo apt install git
 
 sudo apt install make
 
-sudo apt install lua5.4 
+sudo apt install lua5.3 
 
 sudo apt install libsdl2-2.0-0
 
@@ -66,11 +66,13 @@ mkdir codct
 
 cd codct
 
-~/codct$ git clone https://github.com/maximustyumen/codct . 
+~/codct$ git clone https://github.com/maximustyumen/codct
 
 cd constructor_player/ cd src
 
 make
+
+Видео процесса сборки и запуска приложения: https://youtu.be/rG9VwT4sems?si=SHkW4gwkiaTJ-aYi
 
 
 ## Сборка в Windows
@@ -82,9 +84,9 @@ codct\constructor_player\DEPENDENCY
 ### Процесс установки
 1. [Устанавливаем VisualStudio 2019 или VS2022](https://learn.microsoft.com/ru-ru/visualstudio/install/install-visual-studio?view=vs-2022).
 2. Устанавливаем [CMAKE](https://cpp-python-nsu.inp.nsk.su/textbook/sec2/ch5).
-3. Распаковать все архивы из codct\constructor_player\DEPENDENCY в свои каталоги
-4. Последовательно для каждого каталога выполнить сборку проектов через CMake, открыть получившийся проект в VisualStudio и собрать в режиме Release
-5. Открыть проект CODCT в VisualStudio и собрать конструктор (при необходимости настроить каталоги подключаемых заголовочных файлов и каталог библиотек на пути codct\constructor_player\DEPENDENCY).
+4. Распаковать все архивы из codct\constructor_player\DEPENDENCY в свои каталоги
+5. Для каталога codct\OpenSceneGraph выполнить сборку проекта через CMake, открыть получившийся проект в VisualStudio и собрать в режиме Release
+6. Открыть проект CODCT в VisualStudio и собрать конструктор (при необходимости настроить каталоги подключаемых заголовочных файлов и каталог библиотек на пути codct\constructor_player\DEPENDENCY и codct\OpenSceneGraph).
    
 ## Сборка на Android 
 Сборка на андроид производится в соответствии с официальной [документацией](https://www.openscenegraph.com/index.php/documentation/platform-specifics/android/43-building-openscenegraph-for-android-3-0-2) на OSG.
