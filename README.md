@@ -96,3 +96,49 @@ https://rutube.ru/video/b2933dc78abc4145deded37294f41dd8/
 ### Пошаговое руководство по сборке 
 https://github.com/OGStudio/openscenegraph-cross-platform-guide/tree/master/1.8.SampleUnderAndroid
 
+Последовательность сборки (https://github.com/OGStudio/openscenegraph-cross-platform-guide/tree/master):
+
+1. Установить Android Studio (https://developer.android.com/studio)
+   
+2. Установите 32-bit библиотеки при помощи команды: sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+
+3. Запустите Android Studio из директории пользователя (cd ~) при пормощи команды: ./android-studio/bin/studio.sh
+
+4. Выберите стандартные опции установки (standard installation options)
+
+5. Запустите SDK Manager при помощи контекстного меню "Configure -> SDK Manager" и укажите дополнительные компоненты (необходимы CMake, LLDB, NDK)
+
+6. Выберите "Import an Android code sample"
+
+7. Напишите 'Hello GL2' для импорта
+
+8. Выполните тестовый запуск 'Hello GL2' примера. Если список "Android Virtual Device" пуст - выберите эмулируемое устройство (например Nexus One 3.7" with 480x800)
+   
+9. Загрузите необходимую систему эмуляции, например armeabi-v7a для ARMv7
+
+10. Запустите пример, вы должны увидеть зеленый треугольник на дисплее AVD через GLES2 рендер
+
+11. Выберите создание нового проекта.
+
+12. В опциях проекта укажите использование C++ нативной библиотеки для проекта.
+
+13. Выберите пустой проект
+
+14. В опциях укажите подключение C++11, исклчюений (exceptions и RTTI)
+
+15. Запустите проект, Вы должны увидеть текст на экране
+
+16. Перейдите в каталог OpenSceneGraph или клонируйте его: cd ~  cd AndroidStudioProjects git clone https://github.com/openscenegraph/OpenSceneGraph
+
+17. Перейдите в каталог примеров или клонируйте его: cd ~  cd AndroidStudioProjects  git clone https://github.com/ogstudio/openscenegraph-cross-platform-guide-application
+
+18. Копируйте Android part в новый проект: cd ~    cd AndroidStudioProjects   cp -R openscenegraph-cross-platform-guide-application/android/app your_project
+
+19. Выполните постоение статической библиотеки osgNativeLib
+
+20. Включите зависимость в файл CMakeLists:  include(CMakeLists-osgNativeLib.txt)
+
+21. Выполните итоговую сборку проекта и его запуск на ранее выбранном эмулируемом устройстве
+
+22. Полный перечень шагов сборки с изображениями экранов доступен по адресу: https://github.com/OGStudio/openscenegraph-cross-platform-guide/tree/master
+
